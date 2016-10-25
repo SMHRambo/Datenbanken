@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.25)  25 OCT 2016 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.25)  25 OCT 2016 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"./‹bung 1 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker.tex"
-(./‹bung 1 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker.tex
+**./G01B01_Mueller-Meyer-Schulze.tex
+(./G01B01_Mueller-Meyer-Schulze.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 8 language(s) loaded.
 (./gdb-aufgabenblatt.cls
@@ -746,24 +746,30 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 \pgfnodepartsixbox=\box62
 \pgfnodepartfivebox=\box63
 ))))))
-No file "‹bung 1 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker".au
-x.
-\openout1 = `"‹bung 1 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacke
-r.aux"'.
+LaTeX Info: Redefining \rm on input line 3.
+LaTeX Info: Redefining \sf on input line 4.
+LaTeX Info: Redefining \tt on input line 5.
+LaTeX Info: Redefining \bf on input line 6.
+LaTeX Info: Redefining \it on input line 7.
+LaTeX Info: Redefining \sl on input line 8.
+LaTeX Info: Redefining \sc on input line 9.
+ (./G01B01_Mueller-Meyer-Schulze.aux)
+\openout1 = `G01B01_Mueller-Meyer-Schulze.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 19.
+
 (h:/Programme/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -813,12 +819,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-Overfull \hbox (15.46004pt too wide) in paragraph at lines 18--19
-\T1/cmss/m/n/10.95 Die Da-te-nu-n-ab-h‰n-gig-keit be-schreibt die Un-ab-h‰n-gig
--keit der Da-ten im 3-Schichtenmodell(physikalische Schicht(interne
- []
+LaTeX Font Info:    Try loading font information for U+lasy on input line 28.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 59.
 (h:/Programme/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -832,7 +834,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 59.
+Package pdftex.def Info: vsis.pdf used on input line 81.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -843,7 +845,11 @@ Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 
 [1{h:/Programme/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./vsis.pdf>] <use vsis.pdf>
+ <./vsis.pdf>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 84.
+ (h:/Programme/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) <use vsis.pdf>
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 
 
@@ -853,7 +859,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 90.
+Package pdftex.def Info: vsis.pdf used on input line 158.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -862,17 +868,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 
 
-[2]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 90.
-
-LaTeX Font Info:    No file OMScmss.fd. on input line 90.
-
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 90.
-
-<use vsis.pdf>
+[2] <use vsis.pdf>
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 
 
@@ -882,7 +878,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 108.
+Package pdftex.def Info: vsis.pdf used on input line 158.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -891,31 +887,36 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 
 
-[3] (./‹bung 1 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
+[3] (./G01B01_Mueller-Meyer-Schulze.aux) ) 
 Here is how much of TeX's memory you used:
- 18014 strings out of 494893
- 372734 string characters out of 6178435
- 528102 words of memory out of 5000000
- 20959 multiletter control sequences out of 15000+600000
- 12418 words of font info for 35 fonts, out of 8000000 for 9000
+ 18281 strings out of 494893
+ 377497 string characters out of 6178435
+ 536080 words of memory out of 5000000
+ 21201 multiletter control sequences out of 15000+600000
+ 25031 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,23n,81p,8883b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
-{h:/Programme/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<h:
-/Programme/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><h:/Pro
-gramme/texlive/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><h:/Programm
-e/texlive/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><h:/Programme/tex
-live/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><h:/Programme/texlive/
-texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><h:/Programme/texlive/texmf
--dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on "‹bung 1 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel 
-Hacker.pdf" (3 pages, 226619 bytes).
+ 86i,23n,81p,8856b,731s stack positions out of 5000i,500n,10000p,200000b,80000s
+{h:/Programme/texlive/texmf-dist/font
+s/enc/dvips/cm-super/cm-super-t1.enc}<h:/Programme/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><h:/Programme/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><h:/Programme/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmss10.pfb><h:/Programme/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmss8.pfb><h:/Programme/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmssi10.pfb><h:/Programme/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmssi8.pfb><h:/Programme/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><h:/Programme/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb><h:/Programme/texlive/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb><
+h:/Programme/texlive/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><h:/Pr
+ogramme/texlive/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><h:/Program
+me/texlive/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><h:/Programme/te
+xlive/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><h:/Programme/texlive
+/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><h:/Programme/texlive/texm
+f-dist/fonts/type1/public/cm-super/sfsx1440.pfb><h:/Programme/texlive/texmf-dis
+t/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on G01B01_Mueller-Meyer-Schulze.pdf (3 pages, 316771 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

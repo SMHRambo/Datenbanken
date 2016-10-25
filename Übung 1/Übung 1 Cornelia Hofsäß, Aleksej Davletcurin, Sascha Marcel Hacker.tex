@@ -4,7 +4,7 @@
 \renewcommand{\Aufgabenblatt}{1}
 \renewcommand{\Ausgabedatum}{Mi. 15.10.2014}
 \renewcommand{\Abgabedatum}{Do. 31.10.2014}
-\renewcommand{\Gruppe}{Cornelia Hofsäß, Aleksej Davletcurin, Sascha Marcel Hacker}
+\renewcommand{\Gruppe}{Cornelia Hofsä\ss{}, Aleksej Davletcurin, Sascha Marcel Hacker}
 \renewcommand{\STiNEGruppe}{30}
 
 
@@ -52,29 +52,29 @@ Vorgänge
 
 \section{Transaktionen}
 \subsection{1. Fall:}
-	Stromausfall A
-	Konto 5: Unverändert
-	Konto 7: Unverändert
+	Stromausfall A\\
+	Konto 5: Unverändert\\
+	Konto 7: Unverändert\\
 	Der Befehl wurde nicht gespeichert
 \subsection{2. Fall:}
-	Stromausfall A
-	Konto 5: -1000
-	Konto 7: Unverändert
+	Stromausfall A\\
+	Konto 5: -1000\\
+	Konto 7: Unverändert\\
 	Der Befehl wurde gespeichert
 \subsection{3. Fall:}
-	Stromausfall B
-	Konto 5: Unverändert
-	Konto 7: Unverändert
+	Stromausfall B\\
+	Konto 5: Unverändert\\
+	Konto 7: Unverändert\\
 	Beide Befehle wurden nicht gespeichert
 \subsection{4. Fall:}
-	Stromausfall B
-	Konto 5: -1000
-	Konto 7: Unverändert
+	Stromausfall B\\
+	Konto 5: -1000\\
+	Konto 7: Unverändert\\
 	Nur der erste Befehl wurden gespeichert
 \subsection{5. Fall:}
-	Stromausfall B
-	Konto 5: -1000
-	Konto 7: +1000
+	Stromausfall B\\
+	Konto 5: -1000\\
+	Konto 7: +1000\\
 	Beide Befehle wurden gespeichert
 \subsection{6. Fall:}
 \subsection{7. Fall:}
@@ -85,19 +85,24 @@ Hardwareseitig: Indem Speichercontroller mit Batterycache oder USV(unterbrechung
 
 \section{Warm-Up MySQL}
 \subsection{a)}
-1. Es wird eine Tabelle mit dem Namen gdb_gruppeG30.user erstellt die 3 Felder hat.
-	1. id vom Typ Integer und Primary Key
-	2. name vom Typ VarChar mit einer maximalen länge von 49 Zeichen der nicht NULL sein darf.
-	3. password vom Typ VarChar mit einer maximalen länge von 8 Zeichen der nicht NULL sein darf.
+1. Es wird eine Tabelle mit dem Namen gdb\_gruppeG30.user erstellt die 3 Felder hat.
+\begin{itemize}
+\item id vom Typ Integer und Primary Key.
+\item name vom Typ VarChar mit einer maximalen Länge von 49 Zeichen der nicht NULL sein darf.
+\item password vom Typ VarChar mit einer maximalen Länge von 8 Zeichen der nicht NULL sein darf.
+\end{itemize}
 	
-2. Es wird ein Datensatz/Tupel in die Tabelle gdb_gruppeG30.user eingefügt/hinzugefügt mit folgenden Werten:
-	1. 1 als id
-	2. gdbNutzer als name
-	3. geheim als password
-\subsection{b)}
-1. Es werden alle Datensätze/Tupel der Tabelle gdb_gruppeG30.user aufgegeben bei denen der das Attribut Name den Wert gdbNutzer hat.
+2. Es wird ein Datensatz/Tupel in die Tabelle gdb\_gruppeG30.user eingefügt/hinzugefügt mit folgenden Werten:
+\begin{itemize}
+\item 1 als id.
+\item gdbNutzer als name.
+\item geheim als password.
+\end{itemize}
 
-2. Die Tabelle gdb_gruppeG30.user wird von Datenbank gelöscht.
+\subsection{b)}
+1. Es werden alle Datensätze/Tupel der Tabelle gdb\_gruppeG30.user aufgegeben bei denen der das Attribut Name den Wert gdbNutzer hat.
+
+2. Die Tabelle gdb\_gruppeG30.user wird von Datenbank gelöscht.
 \subsection{c)}
 
 \end{document}
