@@ -1,0 +1,103 @@
+\documentclass[ngerman]{gdb-aufgabenblatt}
+
+
+\renewcommand{\Aufgabenblatt}{1}
+\renewcommand{\Ausgabedatum}{Mi. 15.10.2014}
+\renewcommand{\Abgabedatum}{Do. 31.10.2014}
+\renewcommand{\Gruppe}{Cornelia Hofsäß, Aleksej Davletcurin, Sascha Marcel Hacker}
+\renewcommand{\STiNEGruppe}{30}
+
+
+\begin{document}
+\section{Informationssysteme}
+\subsection{a) Charakterisierung:}
+Ein rechnergestütztes Informationssystem ist ein System, 
+bei dem die Erfassung, Speicherung und/oder Transformation von Informationen durch den Einsatz von EDV teilweise automatisiert ist.1 Die Aufgaben sind Erfassung, Speicherung, Transformation von Informationen.
+
+\subsection{b) Datenunabhängigkeit:}
+Die Datenunabhängigkeit beschreibt die Unabhängigkeit der Daten im 3-Schichtenmodell(physikalische Schicht(interne Schicht), konzeptionelle Schicht, externe Schicht(Benutzersichten)).
+
+Physische Datenunabhängigkeit bedeutet, dass die interne von der konzeptionellen und   externen Ebene getrennt ist. Physische Änderungen, z.B. des Speichermediums oder des Datenbankprodukts, wirken sich nicht auf die konzeptionelle oder externe Ebene aus.
+
+Logische Datenunabhängigkeit heißt, dass die konzeptionelle und die externe Ebene getrennt sind. Dies bedeutet, dass Änderungen an der Datenbankstruktur (konzeptionelle Ebene) keine Auswirkungen auf die externe Ebene, also die Masken-Layouts, Listen und Schnittstellen haben.
+
+\subsection{c)}
+
+
+\section{Miniwelt}
+\subsection{a)}
+Objekttypen
+	Mitspieler
+	Tippgemeinschaft
+	Wettbewerb
+	Begegnung
+	(Ergebnis)
+	(Punkte)
+Vorgänge
+	Mitglieder erstellen
+	Mitglieder löschen
+	Tippgemeinschaft erstellen
+	Tippgemeinschaft löschen
+	Wettbewerb erstellen (wird gelöscht wenn Tippgemeinschaft gelöscht wird)
+	Begegnung erstellen (wird gelöscht wenn Wettbewerb gelöscht wird)
+	Tipp abgeben
+	Mitglieder zu Tippgemeinschaft hinzufügen
+	Mitglieder aus Tippgemeinschaft entfernen
+	Ergebnis eintragen
+	Punkte berechnen
+	Punkt ausgeben
+	
+\subsection{b)}
+
+
+\section{Transaktionen}
+\subsection{1. Fall:}
+	Stromausfall A
+	Konto 5: Unverändert
+	Konto 7: Unverändert
+	Der Befehl wurde nicht gespeichert
+\subsection{2. Fall:}
+	Stromausfall A
+	Konto 5: -1000
+	Konto 7: Unverändert
+	Der Befehl wurde gespeichert
+\subsection{3. Fall:}
+	Stromausfall B
+	Konto 5: Unverändert
+	Konto 7: Unverändert
+	Beide Befehle wurden nicht gespeichert
+\subsection{4. Fall:}
+	Stromausfall B
+	Konto 5: -1000
+	Konto 7: Unverändert
+	Nur der erste Befehl wurden gespeichert
+\subsection{5. Fall:}
+	Stromausfall B
+	Konto 5: -1000
+	Konto 7: +1000
+	Beide Befehle wurden gespeichert
+\subsection{6. Fall:}
+\subsection{7. Fall:}
+\subsection{8. Fall:}
+
+Softwareseitig: Indem ein Journal und Dirtyflags eingesetzt werden.
+Hardwareseitig: Indem Speichercontroller mit Batterycache oder USV(unterbrechungsfreie Stromversorgung) eingesetzt werden.
+
+\section{Warm-Up MySQL}
+\subsection{a)}
+1. Es wird eine Tabelle mit dem Namen gdb_gruppeG30.user erstellt die 3 Felder hat.
+	1. id vom Typ Integer und Primary Key
+	2. name vom Typ VarChar mit einer maximalen länge von 49 Zeichen der nicht NULL sein darf.
+	3. password vom Typ VarChar mit einer maximalen länge von 8 Zeichen der nicht NULL sein darf.
+	
+2. Es wird ein Datensatz/Tupel in die Tabelle gdb_gruppeG30.user eingefügt/hinzugefügt mit folgenden Werten:
+	1. 1 als id
+	2. gdbNutzer als name
+	3. geheim als password
+\subsection{b)}
+1. Es werden alle Datensätze/Tupel der Tabelle gdb_gruppeG30.user aufgegeben bei denen der das Attribut Name den Wert gdbNutzer hat.
+
+2. Die Tabelle gdb_gruppeG30.user wird von Datenbank gelöscht.
+\subsection{c)}
+
+\end{document}
