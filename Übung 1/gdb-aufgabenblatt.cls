@@ -16,7 +16,7 @@
 
 
 \renewcommand{\Vorlesung}{Grundlagen von Datenbanken}
-\renewcommand{\Semester}{WS 2014/15}
+\renewcommand{\Semester}{WS 2016/17}
 \renewcommand{\STiNEGruppe}{01}
 \renewcommand{\PunktezahlTitel}{\STiNEGruppeTitel~\STiNEGruppe}
 \renewcommand{\Punktezahl}{\Gruppe}
