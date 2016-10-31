@@ -86,21 +86,45 @@ Typische Vorgänge:
 
 \newpage
 \section{Transaktionen}
+\begin{tabular}{|l|l|p{6cm}|p{6cm}|}
 
- \begin{tabular}{|l|l|p{6cm}|p{6cm}|}
-  \hline
-  Zeitpunkt &  & Ohne DBMS & Mit DBMS \\
-  \hline
-  A & nicht auf FP & Das Geld wurde nicht abgezogen. Der Kontostand bleibt der Selbe. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
-  
-  \hline
-  A & auf FP & 1000 Euro sind verloren gegangen. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
-    \hline
-B & nicht auf FP & Das Geld wurde nicht abgezogen und auch nicht hinzugebucht. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
-    \hline
-B & auf FP & Die Überweisung wird doppelt ausgeführt & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\ 
 \hline
- \end{tabular}
+
+Zeitpunkt &  
+ &
+Ohne DBMS & 
+Mit DBMS \\
+
+\hline
+
+A &
+nicht auf FP &
+Das Geld wurde nicht abgezogen. Der Kontostand bleibt der Selbe. &
+Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
+
+\hline
+
+A &
+auf FP &
+1000 Euro sind verloren gegangen. &
+Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
+
+\hline
+
+B &
+nicht auf FP &
+Das Geld wurde nicht abgezogen und auch nicht hinzugebucht. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
+
+\hline
+
+B &
+auf FP &
+Die Überweisung wird doppelt ausgeführt &
+Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\ 
+
+\hline
+
+\end{tabular}
 
 
 Softwareseitig: Indem ein Journal und Dirtyflags eingesetzt werden.
@@ -109,28 +133,36 @@ Hardwareseitig: Indem Speichercontroller mit Batterycache oder USV(unterbrechung
 \newpage
 \section{Warm-Up MySQL}
 \subsection{a)}
-1. Es wird eine Tabelle mit dem Namen gdb\_gruppeG30.user erstellt die 3 Felder hat.
+\begin{enumerate}
+\item[1)] Es wird eine Tabelle mit dem Namen gdb\_gruppeG30.user erstellt die 3 Felder hat.
 \begin{itemize}
 \item id vom Typ Integer und Primary Key.
 \item name vom Typ VarChar mit einer maximalen Länge von 49 Zeichen der nicht NULL sein darf.
 \item passwort vom Typ VarChar mit einer maximalen Länge von 8 Zeichen der nicht NULL sein darf.
 \end{itemize}
 	
-2. Es wird ein Datensatz/Tripel in die Tabelle gdb\_gruppeG30.user eingefügt/hinzugefügt mit folgenden Werten:
+\item[2)] Es wird ein Datensatz/Tripel in die Tabelle gdb\_gruppeG30.user eingefügt/hinzugefügt mit folgenden Werten:
 \begin{itemize}
 \item 1 als id.
 \item gdbNutzer als name.
 \item geheim als password.
 \end{itemize}
+\end{enumerate}
 
 \subsection{b)}
-1. Es werden alle Datensätze/Tupel der Tabelle gdb\_gruppeG30.user aufgegeben bei denen der das Attribut Name den Wert gdbNutzer hat.
+\begin{enumerate}
+\item[1)] Es werden alle Datensätze/Tupel der Tabelle gdb\_gruppeG30.user aufgegeben bei denen der das Attribut Name den Wert gdbNutzer hat.
 
-2. Die Tabelle gdb\_gruppeG30.user wird von Datenbank gelöscht.
+\item[2)] Die Tabelle gdb\_gruppeG30.user wird von Datenbank gelöscht.
+\end{enumerate}
 
 \subsection{c)}
-File System der skizzierten Architekturübersicht kann man der internen Ebene in den 3 Schichtenmodellen zuordnen, da hier der Plattenzugriff stattfindet.
-Der Connection Pool sowie SQL Interface der skizzierten Architekturübersicht kann man der externen Schicht zuordnen, weil da Anfragen und Updates erfolgen.
-Caches \& Buffer, Optimizer, Parser der skizzierten Architekturübersicht gehören zu der konzeptioneller Schicht des 3-Schichtenmodells.
+\begin{itemize}
+\item File System der skizzierten Architekturübersicht kann man der internen Ebene in den 3 Schichtenmodellen zuordnen, da hier der Plattenzugriff stattfindet.
+
+\item Der Connection Pool sowie SQL Interface der skizzierten Architekturübersicht kann man der externen Schicht zuordnen, weil da Anfragen und Updates erfolgen.
+
+\item Caches \& Buffer, Optimizer, Parser der skizzierten Architekturübersicht gehören zu der konzeptioneller Schicht des 3-Schichtenmodells.
+\end{itemize}
 
 \end{document}
