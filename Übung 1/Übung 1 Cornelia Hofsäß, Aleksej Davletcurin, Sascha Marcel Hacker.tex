@@ -11,17 +11,49 @@
 \begin{document}
 \section{Informationssysteme}
 \subsection{a) Charakterisierung:}
-Ein rechnergestütztes Informationssystem ist ein System, 
-bei dem die Erfassung, Speicherung und/oder Transformation von Informationen durch den Einsatz von EDV teilweise automatisiert ist.1 Die Aufgaben sind Erfassung, Speicherung, Transformation von Informationen.
+Ein Informationssystem (IS) ist ein computergestütztes Anwendungssystem zur Ausführung betrieblicher Aufgaben. Es besteht aus Menschen und Maschinen, die Information erzeugen und/oder benutzen und die durch Kommunikationsbeziehungen miteinander verbunden sind.
+Die Aufgaben eines rechnergestützten Informationssystems sind die Erfassung, Speicherung und Transformation von Informationen, welche durch den Einsatz von EDV teilweise automatisiert sind.
+
 
 \subsection{b) Datenunabhängigkeit:}
-Die Datenunabhängigkeit beschreibt die Unabhängigkeit der Daten im 3-Schichtenmodell(physikalische Schicht(interne Schicht), konzeptionelle Schicht, externe Schicht(Benutzersichten)).
+Die Datenunabhängigkeit beschreibt die Unabhängigkeit der drei Ebenen  im 3-Schichtenmodell(physikalische Schicht(interne Schicht), konzeptionelle Schicht, externe Schicht(Benutzersichten)).
 
-Physische Datenunabhängigkeit bedeutet, dass die interne von der konzeptionellen und   externen Ebene getrennt ist. Physische Änderungen, z.B. des Speichermediums oder des Datenbankprodukts, wirken sich nicht auf die konzeptionelle oder externe Ebene aus.
-
+Man unterscheidet zwischen physischer und logischer Datenunabhängigkeit.
+Physische Datenunabhängigkeit bedeutet, dass die interne von der konzeptionellen und   externen Ebene getrennt ist. Physische Änderungen, z.B. des Speichermediums wirken sich nicht auf die konzeptionelle oder externe Ebene aus.
 Logische Datenunabhängigkeit heißt, dass die konzeptionelle und die externe Ebene getrennt sind. Dies bedeutet, dass Änderungen an der Datenbankstruktur (konzeptionelle Ebene) keine Auswirkungen auf die externe Ebene, also die Masken-Layouts, Listen und Schnittstellen haben.
 
-\subsection{c)}
+\subsection{c) }
+
+\subsubsection{Rechtsschutzversicherung}
+Die Rechtsschutzversicherung Datenbank verwaltet die Informationen über Rechtsanwälte, Kooperationsrechtsanwälte, Mitarbeiter, Kunden und deren Rechtsschutzfälle.
+Typischer Vorgang:
+Ein Kunde hat ein materielles Gut gekauft, welches  mangelhaft war.  Der Verkäufer verweigert dem Kunden von dem Vertrag zurück zu treten.
+Der Kunde ruft den Mitarbeiter der Rechtsschutzversicherung an. Der Mitarbeiter prüft in der Datenbank, ob der Kunde Vertragsrecht mitversichert hat. Wenn dies der Fall ist, dann erfasst der Mitarbeiter einen Rechtsschutzfall in der Datenbank und schickt dem Kunden eine Rechtsschutzzusage mit der Empfehlung des Kooperationsanwaltes in seiner Nähe. Die Kooperationsanwälte sucht der Mitarbeiter ebenfalls über die Datenbank.  Der Kunde ist nicht verpflichtet den Kooperationsrechtsanwalt zu nehmen, sondern kann zu jedem beliebigen Rechtsanwalt gehen, was dann ebenfalls in der Datenbank hinterlegt werden muss.
+Wenn der Kunde Vertragsrecht nicht versichert hat, dann erfasst der Mitarbeiter ebenfalls einen Rechtsschutzfall in dem internen Datenbanksystem, schickt aber eine Rechtsschutzabsage.
+
+\subsubsection{Schule}
+Die Schuldatenbank ist die Sammlung aller für die Abwicklung der an einer Schule anfallenden Verwaltungsaufgaben benötigten Daten.
+
+Typischen Vorgänge:
+Verwaltung der Daten über:
+\begin{itemize}
+\item Lehrer und deren Gehälter
+\item Schüler
+\item Unterrichtsfächer
+\end{itemize}
+
+
+\subsubsection{Online Händler}
+Die Onlinehändlerdatenbank speichert Informationen über Kunden, Mitarbeiter, Produkte und Vertragspartner. 
+Typische Vorgänge:
+\begin{itemize}
+\item Verwaltung vom Lagerbestand der Produkte
+\item Statistik über meistverkaufte Produkte
+\item Automatische Schicken von Werbung an Kunden, die länger nichts bestellt haben
+\item Verwaltung der Daten über Gehälter der Mitarbeiter
+\end{itemize}
+
+
 
 \newpage
 \section{Miniwelt}
@@ -51,34 +83,22 @@ Vorgänge
 
 \newpage
 \section{Transaktionen}
-\subsection{1. Fall:}
-	Stromausfall A\\
-	Konto 5: Unverändert\\
-	Konto 7: Unverändert\\
-	Der Befehl wurde nicht gespeichert
-\subsection{2. Fall:}
-	Stromausfall A\\
-	Konto 5: -1000\\
-	Konto 7: Unverändert\\
-	Der Befehl wurde gespeichert
-\subsection{3. Fall:}
-	Stromausfall B\\
-	Konto 5: Unverändert\\
-	Konto 7: Unverändert\\
-	Beide Befehle wurden nicht gespeichert
-\subsection{4. Fall:}
-	Stromausfall B\\
-	Konto 5: -1000\\
-	Konto 7: Unverändert\\
-	Nur der erste Befehl wurden gespeichert
-\subsection{5. Fall:}
-	Stromausfall B\\
-	Konto 5: -1000\\
-	Konto 7: +1000\\
-	Beide Befehle wurden gespeichert
-\subsection{6. Fall:}
-\subsection{7. Fall:}
-\subsection{8. Fall:}
+
+ \begin{tabular}{|l|c|c|r|}
+  \hline
+  Zeitpunkt &  & Ohne DBMS & Mit DBMS \\
+  \hline
+  A & nicht auf FP & Das Geld wurde nicht abgezogen. Der Kontostand bleibt der Selbe. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
+  
+  \hline
+  A & auf FP & 1000 Euro sind verloren gegangen. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
+    \hline
+B & nicht auf FP & Das Geld wurde nicht abgezogen und auch nicht hinzugebucht. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
+    \hline
+B & auf FP & Die Überweisung wird doppelt ausgeführt & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\ 
+\hline
+ \end{tabular}
+
 
 Softwareseitig: Indem ein Journal und Dirtyflags eingesetzt werden.
 Hardwareseitig: Indem Speichercontroller mit Batterycache oder USV(unterbrechungsfreie Stromversorgung) eingesetzt werden.
@@ -90,10 +110,10 @@ Hardwareseitig: Indem Speichercontroller mit Batterycache oder USV(unterbrechung
 \begin{itemize}
 \item id vom Typ Integer und Primary Key.
 \item name vom Typ VarChar mit einer maximalen Länge von 49 Zeichen der nicht NULL sein darf.
-\item password vom Typ VarChar mit einer maximalen Länge von 8 Zeichen der nicht NULL sein darf.
+\item passwort vom Typ VarChar mit einer maximalen Länge von 8 Zeichen der nicht NULL sein darf.
 \end{itemize}
 	
-2. Es wird ein Datensatz/Tupel in die Tabelle gdb\_gruppeG30.user eingefügt/hinzugefügt mit folgenden Werten:
+2. Es wird ein Datensatz/Tripel in die Tabelle gdb\_gruppeG30.user eingefügt/hinzugefügt mit folgenden Werten:
 \begin{itemize}
 \item 1 als id.
 \item gdbNutzer als name.
@@ -104,6 +124,10 @@ Hardwareseitig: Indem Speichercontroller mit Batterycache oder USV(unterbrechung
 1. Es werden alle Datensätze/Tupel der Tabelle gdb\_gruppeG30.user aufgegeben bei denen der das Attribut Name den Wert gdbNutzer hat.
 
 2. Die Tabelle gdb\_gruppeG30.user wird von Datenbank gelöscht.
+
 \subsection{c)}
+File System der skizzierten Architekturübersicht kann man der internen Ebene in den 3 Schichtenmodellen zuordnen, da hier der Plattenzugriff stattfindet.
+Der Connection Pool sowie SQL Interface der skizzierten Architekturübersicht kann man der externen Schicht zuordnen, weil da Anfragen und Updates erfolgen.
+Caches \& Buffer, Optimizer, Parser der skizzierten Architekturübersicht gehören zu der konzeptioneller Schicht des 3-Schichtenmodells.
 
 \end{document}
