@@ -16,49 +16,30 @@ Die Aufgaben eines rechnergestützten Informationssystems sind die Erfassung, Spe
 
 
 \subsection{b) Datenunabhängigkeit:}
-Die Datenunabhängigkeit beschreibt die Unabhängigkeit der drei Ebenen  im 3-Schichtenmodell(physikalische Schicht(interne Schicht), konzeptionelle Schicht, externe Schicht(Benutzersichten)).
+Eines der Ziele eines DBS ist es einen hohen Grad an Datenunabhängigkeit zu erreichen. Darunter wird die Unabhängigkeit der Anwendungen von den DBS internen Vorgängen verstanden und umgekehrt.
+Bezogen auf die Drei-Schema Architektur(interne, konzeptionelle und externe Ebene) lässt sich der Begriff der Datenunabhängigkeit so erläutern, dass die Ebenen dieser Architektur immun gegenüber Änderungen auf den anderen Ebenen sind.
 
-Man unterscheidet zwischen physischer und logischer Datenunabhängigkeit.
-Physische Datenunabhängigkeit bedeutet, dass die interne von der konzeptionellen und   externen Ebene getrennt ist. Physische Änderungen, z.B. des Speichermediums wirken sich nicht auf die konzeptionelle oder externe Ebene aus.
+Man unterscheidet zwischen der physischen und logischen Datenunabhängigkeit.
+Physische Datenunabhängigkeit bedeutet, dass die interne Ebene von der konzeptionellen und externen Ebene getrennt ist. Physische Änderungen, z.B. des Speichermediums wirken sich nicht auf die konzeptionelle oder externe Ebene aus.
+
 Logische Datenunabhängigkeit heißt, dass die konzeptionelle und die externe Ebene getrennt sind. Dies bedeutet, dass Änderungen an der Datenbankstruktur (konzeptionelle Ebene) keine Auswirkungen auf die externe Ebene, also die Masken-Layouts, Listen und Schnittstellen haben.
 
 \subsection{c) }
 
 \subsubsection{Rechtsschutzversicherung}
-Die Rechtsschutzversicherung Datenbank verwaltet die Informationen über Rechtsanwälte, Kooperationsrechtsanwälte, Mitarbeiter, Kunden und deren Rechtsschutzfälle.\\
-Typischer Vorgang:\\
-\begin{itemize}
-\item Ein Kunde hat ein materielles Gut gekauft, welches  mangelhaft war.\\ \item Der Verkäufer verweigert dem Kunden von dem Vertrag zurück zu treten.\\
-\item Der Kunde ruft den Mitarbeiter der Rechtsschutzversicherung an.\\
-\item Der Mitarbeiter prüft in der Datenbank, ob der Kunde Vertragsrecht mitversichert hat.\\
-\item Wenn dies der Fall ist, dann erfasst der Mitarbeiter einen Rechtsschutzfall in der Datenbank und schickt dem Kunden eine Rechtsschutzzusage mit der Empfehlung des Kooperationsanwaltes in seiner Nähe.\\
-\item Die Kooperationsanwälte sucht der Mitarbeiter ebenfalls über die Datenbank.\\
-\item Der Kunde ist nicht verpflichtet den Kooperationsrechtsanwalt zu nehmen, sondern kann zu jedem beliebigen Rechtsanwalt gehen, was dann ebenfalls in der Datenbank hinterlegt werden muss.\\
-\item Wenn der Kunde Vertragsrecht nicht versichert hat, dann erfasst der Mitarbeiter ebenfalls einen Rechtsschutzfall in dem internen Datenbanksystem, schickt aber eine Rechtsschutzabsage.
-\end{itemize}
+Die Rechtsschutzversicherung Datenbank verwaltet die Informationen über Rechtsanwälte, Kooperationsrechtsanwälte, Mitarbeiter, Kunden und deren Rechtsschutzfälle.
+Typische Anwendungen und Abläufe sind z.B.:
+Prüfen, ob Kunde Vertragsrecht mitversichert hat, Rechtsschutzfälle in der Datenbank anlegen, Kooperationsanwälte nahe des Kundens raussuchen, Rechtsschutzabsagen verschicken
 
-\subsubsection{Schule}
-Die Schuldatenbank ist die Sammlung aller für die Abwicklung der an einer Schule anfallenden Verwaltungsaufgaben benötigten Daten.
-
-Typischen Vorgänge:
-Verwaltung der Daten über:
-\begin{itemize}
-\item Lehrer und deren Gehälter
-\item Schüler
-\item Unterrichtsfächer
-\end{itemize}
-
+\subsubsection{Bibliothek}
+Die Bibliotheksdatenbank verwaltet die Informationen über Leser, Mitarbeiter, Bücher, Autoren und Entleihungen.
+Typische Anwendungen und Abläufe sind z.B.:
+Anmelden der Leser, Speicherung und Verwaltung der Entleihungen, Rückgabeerinnerungen verschicken, Mahngebühren verwalten, falls ein Buch nicht rechtzeitig abgegeben wird, Vormerkungen ermöglichen und Informationen über Verfügbarkeit der Bücher bereitstellen, etc.
 
 \subsubsection{Online Händler}
 Die Onlinehändlerdatenbank speichert Informationen über Kunden, Mitarbeiter, Produkte und Vertragspartner. 
-Typische Vorgänge:
-\begin{itemize}
-\item Verwaltung vom Lagerbestand der Produkte
-\item Statistik über meistverkaufte Produkte
-\item Automatische Schicken von Werbung an Kunden, die länger nichts bestellt haben
-\item Verwaltung der Daten über Gehälter der Mitarbeiter
-\end{itemize}
-
+Typische Anwendungen und Abläufe sind z.B.:
+Verwaltung vom Lagerbestand der Produkte, Statistik über meistverkaufte Produkte führen, Verschickung von Werbung an Kunden, die länger nichts bestellt haben, Informationen über Rabattaktionen, Verwaltung der Daten über Gehälter der Mitarbeiter, etc.
 
 
 \newpage
@@ -70,8 +51,9 @@ Typische Vorgänge:
 \item Tippgemeinschaft
 \item Wettbewerb
 \item Begegnung
-\item (Ergebnis)
-\item (Punkte)
+\item Tipps
+\item (Ergebnis: Attribut von Begegnung)
+\item (Punkte: Attribut von Tipps)
 \end{itemize}
 \subsubsection{Vorgänge}
 \begin{itemize}
@@ -86,51 +68,47 @@ Typische Vorgänge:
 \item Mitglieder aus Tippgemeinschaft entfernen
 \item Ergebnis eintragen
 \item Punkte berechnen
-\item Punkt ausgeben
-\end{itemize}	
+\item Punkte ausgeben
+\end{itemize}
+
+	
 \subsection{b)}
+\begin{enumerate}
+\item \textbf{Zentrale Kontrolle über die operationalen Daten}\\
+Das DBMS übernimmt komplett die interne Verwaltung der Daten. Der Anwender kann die Daten ablegen oder anfragen und muss sich nicht dafür interessieren, wo diese gespeichert sind und wie man effiezient auf die Daten zugreifen kann. Zudem sind die Daten aus der Sicht des Anwenders redundanzfrei, wenn z.B. der Gründer einer Tippgemeinschaft ein Ergenis einträgt, kann er sich sicher sein, dass keine Redundanzen bzw. Inkonsistenten entstehen. 
+
+\item \textbf{Leichte Handhabbarkeit der Daten}\\
+Die Mitglieder können mit einer sehr einfachen, deskreptiven Anfragesprache auf die Datenbank zugreifen.
+
+\item \textbf{Kontrolle der Datenintegrität}\\
+In diesem Beispiel müssen verschiedene Zugriffsrechte durch das DBS kontrolliert werden. Ein Beispiel wäre, dass nur der Gründer die Begegnungen und Ergebnisse eintragen darf oder die Punkte der Mitglieder nicht einfach willkürlich verändert werden können. Zudem muss die logische Datenintegrität gewährleistet werden. Dies kann zum Beispiel durch Integritätsbedingungen erfolgen. Außerdem sollte das DBS das Transaktionskonzept(Durchsetzung der ACID Eigenschaften) unterstützen, sodass im Falle eines Stromausfalls kein inkonsistenter DB Zustand entsteht. Aufgrund des Mehrbenutzerbetriebs muss das DBS die nebenläufige Durchführung von Transaktionen kontrollieren und das prüfen, ob das Korrektheitskriterium erfüllt ist.
+
+\item \textbf{Leistung und Skalierbarkeit}\\
+Die DB sollte einen hohen Durchsatz und eine geringe Antwortzeit ermöglichen. Zudem sollten diese auch bei einem grö"ser werdenden Datenbestand gleich bleiben (Skalierbarkeit). 
+
+\item \textbf{Hoher Grad an Datenunabhängigkeit}\\
+Die Anwendungen sollten unabhängig von den DBS internen Aspekten der Datenverarbeitung sein. (siehe Aufgabe 1.b).
+
+\end{enumerate}
+
 
 \newpage
 \section{Transaktionen}
-\begin{tabular}{|l|l|p{6cm}|p{6cm}|}
 
+ \begin{tabular}{|c|c|p{4cm}| p{6cm}|}
+  \hline
+  Zeitpunkt &  & Ohne DBMS & Mit DBMS \\
+  \hline
+  A & nicht auf FP & Das Geld wurde nicht abgezogen. Der Kontostand bleibt der Selbe. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
+  
+  \hline
+  A & auf FP & 1000 Euro sind verloren gegangen. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
+    \hline
+B & nicht auf FP & Das Geld wurde nicht abgezogen und auch nicht hinzugebucht. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
+    \hline
+B & auf FP & Die Überweisung wird doppelt ausgeführt & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\ 
 \hline
-
-Zeitpunkt &  
- &
-Ohne DBMS & 
-Mit DBMS \\
-
-\hline
-
-A &
-nicht auf FP &
-Das Geld wurde nicht abgezogen. Der Kontostand bleibt der Selbe. &
-Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
-
-\hline
-
-A &
-auf FP &
-1000 Euro sind verloren gegangen. &
-Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
-
-\hline
-
-B &
-nicht auf FP &
-Das Geld wurde nicht abgezogen und auch nicht hinzugebucht. & Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\
-
-\hline
-
-B &
-auf FP &
-Die Überweisung wird doppelt ausgeführt &
-Transaktion wird rückgängig gemacht. Der letzte konsistente DB Zustand wird wieder hergestellt. \\ 
-
-\hline
-
-\end{tabular}
+ \end{tabular}
 
 
 Softwareseitig: Indem ein Journal und Dirtyflags eingesetzt werden.
@@ -157,7 +135,7 @@ Hardwareseitig: Indem Speichercontroller mit Batterycache oder USV(unterbrechung
 
 \subsection{b)}
 \begin{enumerate}
-\item[1)] Es werden alle Datensätze/Tupel der Tabelle gdb\_gruppeG30.user aufgegeben bei denen der das Attribut Name den Wert gdbNutzer hat.
+\item[1)] Es werden alle Datensätze/Tupel der Tabelle gdb\_gruppeG30.user ausgegeben, bei denen das Attribut Name den Wert "gdbNutzer" hat.
 
 \item[2)] Die Tabelle gdb\_gruppeG30.user wird von Datenbank gelöscht.
 \end{enumerate}
