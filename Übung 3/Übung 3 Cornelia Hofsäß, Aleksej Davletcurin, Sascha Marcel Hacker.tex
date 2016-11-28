@@ -2,47 +2,56 @@
 
 
 \renewcommand{\Aufgabenblatt}{3}
-\renewcommand{\Ausgabedatum}{Mi. 15.10.2014}
-\renewcommand{\Abgabedatum}{Do. 31.10.2014}
+\renewcommand{\Ausgabedatum}{Mi. 16.11.2016}
+\renewcommand{\Abgabedatum}{Fr. 02.12.2016}
 \renewcommand{\Gruppe}{Cornelia Hofsä\ss{}, Aleksej Davletcurin, Sascha Marcel Hacker}
 \renewcommand{\STiNEGruppe}{30}
+\renewcommand{\Semester}{WS 2016/17}
 
 
 \begin{document}
 \section{Informationsmodellierung mit dem Entity-Relationship-Modell}
 
-Vereinsmitglied(\underline{Mitgliedsnummer}, Name, Eintrittsdatum)
-Musikinstrument(\underline{Bezeichnung})
-
 \section{Abbildung eines ER-Diagramms auf das relationale Datenmodell}
+\subsection{a)}
+Modell(\underline{Datum, Name}, Grad) \\
+Thema(\underline{Bez.}) \\
+Zugeordnet(\underline{\dotuline{Bez.}, \dotuline{Datum, Name}}) \\
+Set(\underline{SNr.}, Alter, Bez.) \\
+Baustein(\underline{Form}, RGB) \\
+Bild(\underline{\dotuline{Form}, Bild}) \\
+Farbe(\underline{RGB}, CMYN) \\
+Enthält(\underline{\dotuline{SNr.}, \dotuline{Form}, \dotuline{RGB}, \dotuline{Datum}}, Teil-Anzahl) \\
+Verkaufset(\underline{\dotuline{SNr.}}, LPreis) \\
+Werbeset(\underline{\dotuline{SNr.}}, Firma) \\
+\subsection{b)}
 
-Modell(\underline{Name}, \underline{Datum}, Grad)
-Baustein(\underline{Form}, Bild)
-Set(\underline{SNr}, Alter)
-Thema(\underline{Bez})
-Farbe(\underline{RGB}, CMYK)
 
 \section{Relationale Algebra und SQL}
-\subsection{?}
-\pi Titel(\sigma Seitenzahl > 200 \wedge Erscheinungsjahr > 1950)
+\subsection{a)}
+$\pi$ Titel($\sigma$ Seitenzahl > 200 $\wedge$ Erscheinungsjahr > 1950)
 \begin{itemize}
 \item Hundert Jahre Einsamkeit
 \item Requiem für einen Traum
 \item Der Talisman
 \end{itemize}
-\pi Vorname, Nachname((\sigma Buch.Titel = Der Talisman(schreibt)) \bowtie Person)
+
+$\pi$ Vorname, Nachname(($\sigma$ Buch.Titel = Der Talisman(schreibt)) $\bowtie$ Person)
 \begin{itemize}
 \item Stephen King
 \item Peter Straub
 \end{itemize}
-\pi Vorname, Nachname(\sigma Begutachtet.Buch = Person.Lieblingsbuch(Person \bowtie Begutachtet))
+
+$\pi$ Vorname, Nachname($\sigma$ Begutachtet.Buch = Person.Lieblingsbuch(Person $\bowtie$ Begutachtet))
 \begin{itemize}
 \item Leo Tolstoi
 \item Fjodor Dostojewski
 \item Gabriel García Márquez
 \end{itemize}
-\subsection{?}
-\subsection{?}
+
+\subsection{b)}
+
+\subsection{c)}
 SELECT DISTINCT Vorname, Nachname FROM Buch WHERE Seitenzahl > 500
 \begin{itemize}
 \item Leo Tolstoi
@@ -55,7 +64,7 @@ SELECT Buch.Titel FROM Schreibt WHERE Schreibt.Autor = Begutachtet.Lektor
 \item Schuld und Sühne
 \item Krieg und Frieden
 \item Anna Karenina
-\item Hundert Jahre Einsamkei
+\item Hundert Jahre Einsamkeit
 \item Der Talisman
 \item Schall und Wahn
 \item Als ich im Sterben lag
@@ -65,4 +74,6 @@ SELECT Vorname, Nachname FROM Person WHERE Person.PID NOT IN (SELECT Begutachtet
 \begin{itemize}
 \item Hubert Selby
 \end{itemize}
+
+\section{Algebraische Optimierung}
 \end{document}
