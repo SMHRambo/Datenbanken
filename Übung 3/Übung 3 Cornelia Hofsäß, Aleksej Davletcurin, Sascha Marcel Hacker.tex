@@ -9,5 +9,44 @@
 
 
 \begin{document}
+\section{Informationsmodellierung mit dem Entity-Relationship-Modell}
+
+Vereinsmitglied(\underline{Mitgliedsnummer}, Name, Eintrittsdatum)
+Musikinstrument(\underline{Bezeichnung})
+
+\section{Abbildung eines ER-Diagramms auf das relationale Datenmodell}
+
+Modell(\underline{Name}, \underline{Datum}, Grad)
+Baustein(\underline{Form}, Bild)
+Set(\underline{SNr}, Alter)
+Thema(\underline{Bez})
+Farbe(\underline{RGB}, CMYK)
+
+\section{Relationale Algebra und SQL}
+\subsection{?}
+\pi Titel(\sigma Seitenzahl > 200 \wedge Erscheinungsjahr > 1950)
+\begin{itemize}
+\item Hundert Jahre Einsamkeit
+\item Requiem für einen Traum
+\item Der Talisman
+\end{itemize}
+\pi Vorname, Nachname((\sigma Buch.Titel = Der Talisman(schreibt)) \bowtie Person)
+\begin{itemize}
+\item Stephen King
+\item Peter Straub
+\end{itemize}
+\pi Vorname, Nachname(\sigma Begutachtet.Buch = Person.Lieblingsbuch(Person \bowtie Begutachtet))
+\begin{itemize}
+\item Leo Tolstoi
+\item Fjodor Dostojewski
+\item Gabriel García Márquez
+\end{itemize}
+\subsection{?}
+\subsection{?}
+\begin{itemize}
+\item SELECT DISTINCT VOrname, Nachname FROM Buch WHERE Seitenzahl > 500
+\item SELECT Titel
+\end{itemize}
+
 
 \end{document}
