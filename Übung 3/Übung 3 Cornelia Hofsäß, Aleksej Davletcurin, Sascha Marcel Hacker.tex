@@ -43,10 +43,26 @@ Farbe(\underline{RGB}, CMYK)
 \end{itemize}
 \subsection{?}
 \subsection{?}
+SELECT DISTINCT Vorname, Nachname FROM Buch WHERE Seitenzahl > 500
 \begin{itemize}
-\item SELECT DISTINCT VOrname, Nachname FROM Buch WHERE Seitenzahl > 500
-\item SELECT Titel
+\item Leo Tolstoi
+\item Fjodor Dostojewsk
+\item Stephen King
+\item Peter Straub
 \end{itemize}
-
-
+SELECT Buch.Titel FROM Schreibt WHERE Schreibt.Autor = Begutachtet.Lektor
+\begin{itemize}
+\item Schuld und Sühne
+\item Krieg und Frieden
+\item Anna Karenina
+\item Hundert Jahre Einsamkei
+\item Der Talisman
+\item Schall und Wahn
+\item Als ich im Sterben lag
+\item Der Fremde
+\end{itemize}
+SELECT Vorname, Nachname FROM Person WHERE Person.PID NOT IN (SELECT Begutachtet.Lektor FROM Begutachtet)
+\begin{itemize}
+\item Hubert Selby
+\end{itemize}
 \end{document}
