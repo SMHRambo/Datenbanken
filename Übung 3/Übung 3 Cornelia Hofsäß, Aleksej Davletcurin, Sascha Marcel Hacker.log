@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.28)  28 NOV 2016 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.28)  1 DEC 2016 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -810,24 +810,21 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
+<diagramm.jpg, id=4, 3131.7pt x 4175.6pt>
+File: diagramm.jpg Graphic file (type jpg)
+ <use diagramm.jpg>
+Package pdftex.def Info: diagramm.jpg used on input line 14.
+(pdftex.def)             Requested size: 213.36374pt x 284.52756pt.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 18.
 
 (c:/Uni/texlive/2016/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 17--27
+Underfull \hbox (badness 10000) in paragraph at lines 18--29
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 34.
-
-LaTeX Font Info:    No file OMScmss.fd. on input line 34.
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 34.
-
-<vsis.pdf, id=4, 774.57924pt x 774.62788pt> <use vsis.pdf>
+<vsis.pdf, id=5, 774.57924pt x 774.62788pt> <use vsis.pdf>
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 
 
@@ -837,7 +834,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 57.
+Package pdftex.def Info: vsis.pdf used on input line 37.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -848,7 +845,17 @@ Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 
 [1{c:/Uni/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./vsis.pdf>] <use vsis.pdf>
+ <./vsis.pdf> <./diagramm.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 37.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 37.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 37.
+
+<use vsis.pdf>
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 
 
@@ -858,7 +865,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 79.
+Package pdftex.def Info: vsis.pdf used on input line 77.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -867,32 +874,61 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 
 
-[2] (./‹bung 3 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker.aux)
+[2]
+Overfull \hbox (32.50835pt too wide) in paragraph at lines 85--87
+\T1/cmss/m/n/10.95 SELECT DIS-TINCT Vor-na-me, Nach-na-me FROM Per-son IN-NER J
+OIN Schreibt ON Per-son.PID=Schreibt.Autor,(SELECT
+ []
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+File: vsis.pdf Graphic file (type pdf)
+
+<use vsis.pdf>
+Package pdftex.def Info: vsis.pdf used on input line 112.
+(pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
+
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (77.26578pt too high) has occurred while \output is active []
+
+
+[3] (./‹bung 3 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 18039 strings out of 493013
- 372862 string characters out of 6135156
- 534721 words of memory out of 5000000
- 21209 multiletter control sequences out of 15000+600000
+ 18046 strings out of 493013
+ 372949 string characters out of 6135156
+ 537721 words of memory out of 5000000
+ 21213 multiletter control sequences out of 15000+600000
  16849 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,23n,81p,8883b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,23n,81p,8904b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Uni/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/
 Uni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Uni/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Uni/texliv
-e/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/Uni/texlive/2016
-/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/Uni/texlive/2016/texmf
--dist/fonts/type1/public/cm-super/sfsx1000.pfb><c:/Uni/texlive/2016/texmf-dist/
-fonts/type1/public/cm-super/sfsx1200.pfb><c:/Uni/texlive/2016/texmf-dist/fonts/
-type1/public/cm-super/sfsx1440.pfb>
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Uni/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/Uni/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/Uni/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Uni/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Uni/texlive/2016/texmf-dist/fonts
+/type1/public/cm-super/sfss1000.pfb><c:/Uni/texlive/2016/texmf-dist/fonts/type1
+/public/cm-super/sfss1095.pfb><c:/Uni/texlive/2016/texmf-dist/fonts/type1/publi
+c/cm-super/sfsx1000.pfb><c:/Uni/texlive/2016/texmf-dist/fonts/type1/public/cm-s
+uper/sfsx1200.pfb><c:/Uni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
+fsx1440.pfb>
 Output written on "‹bung 3 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel 
-Hacker.pdf" (2 pages, 228579 bytes).
+Hacker.pdf" (3 pages, 5058623 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
