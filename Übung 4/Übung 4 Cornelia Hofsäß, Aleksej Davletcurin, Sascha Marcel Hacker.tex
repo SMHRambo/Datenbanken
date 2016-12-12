@@ -8,6 +8,26 @@
 \renewcommand{\STiNEGruppe}{30}
 
 
+
 \begin{document}
+
+$\pi_{Jahresgehalt}$(Job $\underset{JNR=Job}{\bowtie}$ Bewerbung $\underset{Bewerber=PNR}\bowtie$ ($\sigma_{Geb}$ $\geq$ '1980-01-01'(Person)))
+\\
+
+$\pi_{Titel,Jahresgehalt}$(Job $\underset{JNR=Job}{\bowtie}$Bewerbung$\underset{Bewerber=PNR}\bowtie$Person$\underset{Heimat=LNR}\bowtie$($\sigma_{Name='Schweiz'}(Land)$))
+\\
+
+$\pi_{Vorname,Nachname}$(Personen$\bowtie(\pi_{PNR}(Personen)-\pi_{PNR}(Bewerber)) )$
+\\
+
+Gebe das Geburtsdatum der Personen aus, deren Sachbearbeiter nach dem 31.12.1994 geboren worden sind.
+\\
+
+Dadurch das die referentielle Intergrität von Fremdschlüsseln nicht verzögert am Ende der Transaktion geprüft werden kann, können keine wechselseitige Abhängigkeiten aufgebaut werden.
+Wenn Buch noch das Atribut Editor enthalten würde, das auf Person.PID zeigt, dann könnten beide Tabellen nicht erstellt werden, da sie von der jeweils anderen abhängen.
+Eine Lösung wäre den Fremdschlüssel später einzufügen mit dem Befehl alter table.
+
+
+
 
 \end{document}
