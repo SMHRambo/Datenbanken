@@ -8,26 +8,57 @@
 \renewcommand{\STiNEGruppe}{30}
 
 
+\usepackage{listings} \lstset{numbers=left, numberstyle=\tiny, numbersep=5pt} \lstset{language=sql}
+
+
 
 \begin{document}
 
-$\pi_{Jahresgehalt}$(Job $\underset{JNR=Job}{\bowtie}$ Bewerbung $\underset{Bewerber=PNR}\bowtie$ ($\sigma_{Geb}$ $\geq$ '1980-01-01'(Person)))
-\\
+\section{Relationenalgebra} 
 
+\subsection*{a)}
+
+$\pi_{Jahresgehalt}$(Job $\underset{JNR=Job}{\bowtie}$ Bewerbung $\underset{Bewerber=PNR}\bowtie$ ($\sigma_{Geb \geq \text{'1980-01-01'}}$(Person)))
+
+
+\subsection*{b)}
 $\pi_{Titel,Jahresgehalt}$(Job $\underset{JNR=Job}{\bowtie}$Bewerbung$\underset{Bewerber=PNR}\bowtie$Person$\underset{Heimat=LNR}\bowtie$($\sigma_{Name='Schweiz'}(Land)$))
-\\
 
+
+\subsection*{c)} 
 $\pi_{Vorname,Nachname}$(Personen$\bowtie(\pi_{PNR}(Personen)-\pi_{PNR}(Bewerber)) )$
-\\
 
+\subsection*{d)}
 Gebe das Geburtsdatum der Personen aus, deren Sachbearbeiter nach dem 31.12.1994 geboren worden sind.
 \\
 
-Dadurch das die referentielle Intergrität von Fremdschlüsseln nicht verzögert am Ende der Transaktion geprüft werden kann, können keine wechselseitige Abhängigkeiten aufgebaut werden.
-Wenn Buch noch das Atribut Editor enthalten würde, das auf Person.PID zeigt, dann könnten beide Tabellen nicht erstellt werden, da sie von der jeweils anderen abhängen.
-Eine Lösung wäre den Fremdschlüssel später einzufügen mit dem Befehl alter table.
+\section{Schemadefinition}
+\subsection*{a)}
+\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{create_table.sql}
+
+\subsection*{b)}
+Dadurch, dass die referentielle Integrität von Fremdschlüsseln nicht verzögert am Ende der Trandaktion geprüft werden kann, können keine wechselseitigen Abhängigkeiten zwischen unterschiedlichen Tabellen aufgebaut werden. Wenn die Tablle Buch noch das Attribut Editor enthalten würde, das auf Person.Pid zeigt, dann können beide Tabellen erst einmal nicht erstellt werden, da sie voneinander abhängig sind. Eine Lösung wäre den Fremdschlüssel mit Hilfe des Befehls alter table später einzufügen.
 
 
+\subsection*{c)}
+\includegraphics[]{insert_data}
+\subsection*{d)}
+\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{delete_peter.sql}
+
+
+\section{SQL}
+\subsection{a)}
+\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{Anfragen1.sql}
+
+\subsection{b)}
+\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{Anfragen2.sql}
+
+\subsection{c)}
+\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{Anfragen3.sql}
+
+\subsection{d)}
+\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{Anfragen4.sql}
+\section{Optimierung}
 
 
 \end{document}

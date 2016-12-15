@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.25)  12 DEC 2016 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.25)  15 DEC 2016 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,23 +820,71 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 \pgfnodepartsixbox=\box62
 \pgfnodepartfivebox=\box63
 ))))))
-(./‹bung 4 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker.aux)
+(c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/tex/latex/listings/li
+stings.sty
+\lst@mode=\count125
+\lst@gtempboxa=\box64
+\lst@token=\toks35
+\lst@length=\count126
+\lst@currlwidth=\dimen177
+\lst@column=\count127
+\lst@pos=\count128
+\lst@lostspace=\dimen178
+\lst@width=\dimen179
+\lst@newlines=\count129
+\lst@lineno=\count130
+\lst@maxwidth=\dimen180
+
+(c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/tex/latex/listings/ls
+tmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count131
+\lst@skipnumbers=\count132
+\lst@framebox=\box65
+)
+(c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/tex/latex/listings/li
+stings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/tex/latex/listings/ls
+tlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(./‹bung 4 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker.aux
+
+LaTeX Warning: Label `beispielcode' multiply defined.
+
+
+LaTeX Warning: Label `beispielcode' multiply defined.
+
+
+LaTeX Warning: Label `beispielcode' multiply defined.
+
+
+LaTeX Warning: Label `beispielcode' multiply defined.
+
+
+LaTeX Warning: Label `beispielcode' multiply defined.
+
+)
 \openout1 = `"‹bung 4 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacke
 r.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 15.
 
 (c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/tex/latex/base/t1cmss
 .fd
@@ -845,17 +893,17 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 (c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/tex/context/base/mkii
 /supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen177
-\scratchbox=\box64
-\nofMPsegments=\count126
-\nofMParguments=\count127
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen178
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count133
+\scratchdimen=\dimen181
+\scratchbox=\box66
+\nofMPsegments=\count134
+\nofMParguments=\count135
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen182
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
+\everyMPtoPDFconversion=\toks37
 )
 (c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/tex/generic/oberdiek/
 pdftexcmds.sty
@@ -895,32 +943,18 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )) ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
+\c@lstlisting=\count139
+LaTeX Font Info:    Try loading font information for U+lasy on input line 21.
 
 (c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/tex/latex/base/ulasy.
 fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-
- []
-
-<vsis.pdf, id=4, 774.57924pt x 774.62788pt> <use vsis.pdf>
+(./create_table.sql <vsis.pdf, id=4, 774.57924pt x 774.62788pt> <use vsis.pdf>
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 
 
@@ -930,7 +964,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 33.
+Package pdftex.def Info: vsis.pdf used on input line 17.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -942,36 +976,141 @@ Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 [1{c:/Users/Cornelia/Documents/Programme/texlive/texmf-var/fonts/map/pdftex/upd
 map/pdftex.map}
 
- <./vsis.pdf>]
-(./‹bung 4 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker.aux) ) 
+ <./vsis.pdf>])
+<insert_data.png, id=28, 399.29175pt x 511.31026pt>
+File: insert_data.png Graphic file (type png)
+ <use insert_data.png>
+Package pdftex.def Info: insert_data.png used on input line 44.
+(pdftex.def)             Requested size: 399.29077pt x 511.30899pt.
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+File: vsis.pdf Graphic file (type pdf)
+
+<use vsis.pdf>
+Package pdftex.def Info: vsis.pdf used on input line 45.
+(pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
+
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (77.26578pt too high) has occurred while \output is active []
+
+
+[2] (./delete_peter.sql <use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+File: vsis.pdf Graphic file (type pdf)
+
+<use vsis.pdf>
+Package pdftex.def Info: vsis.pdf used on input line 1.
+(pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
+
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (77.26578pt too high) has occurred while \output is active []
+
+
+[3 <./insert_data.png>]) (./Anfragen1.sql) (./Anfragen2.sql
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 3.
+LaTeX Font Info:    No file OMScmss.fd. on input line 3.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 3.
+
+) (./Anfragen3.sql <use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+File: vsis.pdf Graphic file (type pdf)
+
+<use vsis.pdf>
+Package pdftex.def Info: vsis.pdf used on input line 3.
+(pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
+
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (77.26578pt too high) has occurred while \output is active []
+
+
+[4]) (./Anfragen4.sql) <use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+File: vsis.pdf Graphic file (type pdf)
+
+<use vsis.pdf>
+Package pdftex.def Info: vsis.pdf used on input line 64.
+(pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
+
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (77.26578pt too high) has occurred while \output is active []
+
+
+[5] (./‹bung 4 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel Hacker.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18028 strings out of 494893
- 380689 string characters out of 6178435
- 527102 words of memory out of 5000000
- 20967 multiletter control sequences out of 15000+600000
- 14531 words of font info for 48 fonts, out of 8000000 for 9000
+ 19584 strings out of 494893
+ 403294 string characters out of 6178435
+ 588456 words of memory out of 5000000
+ 22479 multiletter control sequences out of 15000+600000
+ 18380 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,23n,81p,8883b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:
-/Users/Cornelia/Documents/Programme/texlive/texmf-dist/fonts/enc/dvips/cm-super
-/cm-super-t1.enc}<c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Cornelia/Documents/Programme/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/Users/Cornelia/D
-ocuments/Programme/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-<c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmssi10.pfb><c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/Users/Cornelia/Documents/Program
-me/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Corne
-lia/Documents/Programme/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
+ 86i,24n,81p,8883b,2062s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/fonts/enc/dvips/cm-
+super/cm-super-t1.enc}<c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Cornelia/Documents/Program
+me/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/Users/Corne
+lia/Documents/Programme/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8
 .pfb><c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/fonts/type1/publ
-ic/cm-super/sfss1000.pfb><c:/Users/Cornelia/Documents/Programme/texlive/texmf-d
-ist/fonts/type1/public/cm-super/sfss1095.pfb><c:/Users/Cornelia/Documents/Progr
-amme/texlive/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb>
+ic/amsfonts/cm/cmssi10.pfb><c:/Users/Cornelia/Documents/Programme/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/Users/Cornelia/Documents/Pr
+ogramme/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/
+Cornelia/Documents/Programme/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy6.pfb><c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><c:/Users/Cornelia/Documents/Programme/texlive/te
+xmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c:/Users/Cornelia/Documents/
+Programme/texlive/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/Users
+/Cornelia/Documents/Programme/texlive/texmf-dist/fonts/type1/public/cm-super/sf
+ss1000.pfb><c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/fonts/type
+1/public/cm-super/sfss1095.pfb><c:/Users/Cornelia/Documents/Programme/texlive/t
+exmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><c:/Users/Cornelia/Documents
+/Programme/texlive/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/User
+s/Cornelia/Documents/Programme/texlive/texmf-dist/fonts/type1/public/cm-super/s
+fsx1200.pfb><c:/Users/Cornelia/Documents/Programme/texlive/texmf-dist/fonts/typ
+e1/public/cm-super/sfsx1440.pfb>
 Output written on "‹bung 4 Cornelia Hofs‰ﬂ, Aleksej Davletcurin, Sascha Marcel 
-Hacker.pdf" (1 page, 232932 bytes).
+Hacker.pdf" (5 pages, 495667 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
