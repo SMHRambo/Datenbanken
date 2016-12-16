@@ -2,63 +2,60 @@
 
 
 \renewcommand{\Aufgabenblatt}{4}
-\renewcommand{\Ausgabedatum}{Mi. 15.10.2014}
-\renewcommand{\Abgabedatum}{Do. 31.10.2014}
+\renewcommand{\Ausgabedatum}{Mi. 30.11.2016}
+\renewcommand{\Abgabedatum}{Fr. 16.12.2016}
 \renewcommand{\Gruppe}{Cornelia Hofsä\ss{}, Aleksej Davletcurin, Sascha Marcel Hacker}
 \renewcommand{\STiNEGruppe}{30}
 
 
 \usepackage{listings} \lstset{numbers=left, numberstyle=\tiny, numbersep=5pt} \lstset{language=sql}
-
-
+ \usepackage{pdfpages}
 
 \begin{document}
 
 \section{Relationenalgebra} 
-
 \subsection*{a)}
-
-$\pi_{Jahresgehalt}$(Job $\underset{JNR=Job}{\bowtie}$ Bewerbung $\underset{Bewerber=PNR}\bowtie$ ($\sigma_{Geb \geq \text{'1980-01-01'}}$(Person)))
-
+$\pi_{Jahresgehalt}$(Job $\underset{JNR=Job}{\bowtie}$ Bewerbung $\underset{Bewerber=PNR}\bowtie$ ($\sigma_{Geb \geq \text{'1980-01-01'}}$(Person)))\\
 
 \subsection*{b)}
-$\pi_{Titel,Jahresgehalt}$(Job $\underset{JNR=Job}{\bowtie}$Bewerbung$\underset{Bewerber=PNR}\bowtie$Person$\underset{Heimat=LNR}\bowtie$($\sigma_{Name='Schweiz'}(Land)$))
-
+$\pi_{Titel,Jahresgehalt}$(Job $\underset{JNR=Job}{\bowtie}$Bewerbung$\underset{Bewerber=PNR}\bowtie$Person$\underset{Heimat=LNR}\bowtie$($\sigma_{Name='Schweiz'}(Land)$))\\
 
 \subsection*{c)} 
-$\pi_{Vorname,Nachname}$(Personen$\bowtie(\pi_{PNR}(Personen)-\pi_{PNR}(Bewerber)) )$
+$\pi_{Vorname,Nachname}$(Personen$\bowtie(\pi_{PNR}(Personen)-\pi_{PNR}(Bewerber)) )$\\
 
 \subsection*{d)}
-Gebe das Geburtsdatum der Personen aus, deren Sachbearbeiter nach dem 31.12.1994 geboren worden sind.
-\\
+Gebe das Geburtsdatum der Personen aus, deren Sachbearbeiter nach dem 31.12.1994 geboren worden sind.\\
+
 
 \section{Schemadefinition}
 \subsection*{a)}
-\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{create_table.sql}
+\lstinputlisting[frame=single,label=create_table.sql,caption=createtable.sql]{create_table.sql}
 
 \subsection*{b)}
-Dadurch, dass die referentielle Integrität von Fremdschlüsseln nicht verzögert am Ende der Trandaktion geprüft werden kann, können keine wechselseitigen Abhängigkeiten zwischen unterschiedlichen Tabellen aufgebaut werden. Wenn die Tablle Buch noch das Attribut Editor enthalten würde, das auf Person.Pid zeigt, dann können beide Tabellen erst einmal nicht erstellt werden, da sie voneinander abhängig sind. Eine Lösung wäre den Fremdschlüssel mit Hilfe des Befehls alter table später einzufügen.
-
+Dadurch, dass die referentielle Integrität von Fremdschlüsseln nicht verzögert am Ende der Trandaktion geprüft werden kann, können keine wechselseitigen Abhängigkeiten zwischen unterschiedlichen Tabellen aufgebaut werden. Wenn die Tablle Buch noch das Attribut Editor enthalten würde, das auf Person.Pid zeigt, dann können beide Tabellen erst einmal nicht erstellt werden, da sie voneinander abhängig sind. Eine Lösung wäre den Fremdschlüssel mit Hilfe des Befehls alter table später einzufügen.\\
 
 \subsection*{c)}
 \includegraphics[]{insert_data}
+
 \subsection*{d)}
-\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{delete_peter.sql}
+\lstinputlisting[frame=single,label=delete_peter.sql,caption=deletepeter.sql]{delete_peter.sql}
 
 
 \section{SQL}
 \subsection{a)}
-\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{Anfragen1.sql}
+\lstinputlisting[frame=single,label=Anfragen1.sql,caption=Anfragen1.sql]{Anfragen1.sql}
 
 \subsection{b)}
-\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{Anfragen2.sql}
+\lstinputlisting[frame=single,label=Anfragen2.sql,caption=Anfragen2.sql]{Anfragen2.sql}
 
 \subsection{c)}
-\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{Anfragen3.sql}
+\lstinputlisting[frame=single,label=Anfragen3.sql,caption=Anfragen3.sql]{Anfragen3.sql}
 
 \subsection{d)}
-\lstinputlisting[frame=single,label=beispielcode,caption=Ein Beispiel]{Anfragen4.sql}
-\section{Optimierung}
+\lstinputlisting[frame=single,label=Anfragen4.sql,caption=Anfragen4.sql]{Anfragen4.sql}
 
+\section{Optimierung}
+\includepdf[]{Aufgabe4.pdf}
+%\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Aufgabe4}
 
 \end{document}
