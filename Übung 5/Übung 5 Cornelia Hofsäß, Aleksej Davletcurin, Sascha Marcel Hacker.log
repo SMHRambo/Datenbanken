@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.25)  12 JAN 2017 21:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.25)  13 JAN 2017 00:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1062,7 +1062,7 @@ Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 Here is how much of TeX's memory you used:
  20382 strings out of 494893
  417035 string characters out of 6178435
- 580456 words of memory out of 5000000
+ 580450 words of memory out of 5000000
  23266 multiletter control sequences out of 15000+600000
  17621 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
