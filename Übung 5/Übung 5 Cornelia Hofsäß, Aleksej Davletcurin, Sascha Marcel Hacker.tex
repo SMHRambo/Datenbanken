@@ -7,7 +7,48 @@
 \renewcommand{\Gruppe}{Cornelia Hofsä\ss{}, Aleksej Davletcurin, Sascha Marcel Hacker}
 \renewcommand{\STiNEGruppe}{30}
 
-
+\usepackage{listings} \lstset{numbers=left, numberstyle=\tiny, numbersep=5pt} \lstset{language=sql}
+ \usepackage{pdfpages}
+ 
 \begin{document}
+\section{Referentielle Aktionen}
+\subsection*{a)}
+Bei einem bezüglich der referentiellen Aktionen sicheren Schemas ist das Ergebnis einer delete oder update Operation unabhängig von der Reihenfolge, in der sie durchgeführt wird.
+\subsection*{b)}
+Im vorliegenden Schema gibt es zwei Fälle, in denen keine sichere referentielle Aktion durchgeführt werden kann. 
+\textbf{Fall 1:} Wenn eine Person gelöscht wird, welche einen Film ausgeliehen hat, wird die Operation unterbunden. Wenn aber zuerst die Filme gelöscht werden, von denen die Person Produzent ist und die Person genau die Filme, die er selbst produziert hat, ausgeliehen hat, wird die Operation nicht unterbunden. Je nach Reihenfolge der Löschoperation kommen unterschiedliche Ergebnisse heraus. Wir nehmen an, dass der ausgeliehene Film nicht im Bestand einer Videothek ist, ansonsten muss Fall 2 mitbeachtet werden.\\
+\textbf{Fall 2:} Wenn der Produzent eines Filmes gleichzeitig der Leiter einer Videothek ist und dieser gelöscht wird, muss, damit die Löschoperation erfolgreich ist, zuerst die Videothek mit ihrem Bestand gelöscht werden, damit später der Film, den der Leiter der Videothek produziert hat, gelöscht werden kann. Wenn nachdem der Leiter gelöscht wurde, zuerst der Film gelöscht wird, dann wird die Löschoperation unterbunden, falls der Film im Bestand der Videothek ist.
+\section{Änderbarkeit von Sichten}
+\subsection*{a)}
+
+\lstinputlisting[frame=single,label=Anfragen1.sql,caption=(i)-(iv)]{Aufgabe2a.sql}
+Änderungsoperationen sind in SQL auf Tupel von Sichten erlaubt, wenn folgende drei Bedingungen erfüllt sind: Die Änderung in der Sicht muss eindeutig einem Tupel in der Basisrealtion zugeordnet werden können. Es muss also in der Sicht ein Primärschlüssel beziehungsweise ein Schlüsselkandidat vorhanden sein. Zudem darf sich die Sicht nur auf eine einzige Tabelle beziehen und es dürfen in der Sicht keine Aggregatfunktionen, Gruppierungen oder Duplikateliminierung vorhanden sein, denn zum Beispiel kann nicht das Durchschnittsgehalt einer bestimmten Abteilung in der Basisreltation verändert werden.
+
+Die Tupel in den Sichten FerariMechaniker und alteRennserien dürfen nicht verändert werden, da sich die Sicht FerariMechaniker auf zwei Tabellen bezieht und sich in der Sicht alteRennserien kein Primärschlüssel befindet.
+Dagegen dürfen die Tupel der Sichten reicheMechaniker und Ferariwagen verändert werden, da hier alle drei Bedingungen erfüllt sind: Die Sichten beziehen sich auf nur eine Tabelle, enthalten keine Aggregatfunktionen oder Gruppierungen und enthalten einen Primärschlüssel.
+
+\subsection*{b)}
+Alle vier Sichten sind änderbar, da die drei oben genannten Bedingungen für alle Sichten erfüllt sind.
+
+Die erste Änderung bezieht sich auf die Sicht Formel1\_Wagen. Durc die Angabe von 'WITH CASCADED CHECK OPTION' sind Änderungen nur zuläassig, wenn das geänderte Tupel immer noch das Sicht Prädikat erfüllt, also das geänderte Tupel in der Sicht vorhanden bleibt. Dies ist hier der Fall, da nach der Änderung des Jahres das Tupel immer noch die Rennserie Formel 1 hat.
+
+Diese Änderung ist nicht zulässig, da auch die Tabelle F156 die Spezifizierung 'WITH CASCADED CHECK OPTION' enthält, wodurch nur Änderungen zulässig sind, durch die die Sicht-Bedingung immer noch erfüllt bleibt. Wenn das Jahr auf 2014 gesetzt wird, dann fallen alle Tupel aus der Sicht F156 raus, da die Sicht nur Tupel enthält, bei denen das Jahr zwischen 1961 und 1963 liegt.
+
+Diese Änderung ist zulässig. Durch die Änderung des Renstalls in 'Lotus' fliegen zwar alle Tupel aus der Sicht Ferari\_F1\_Wagen heraus, jedoch bleiben alle Tupel in der Sicht Formel1Wagen enthalten, da das Attribut Rennserie nicht verändert wird.
+
+Das Einfügen des Tupels ist nicht zulässig, da sich die Sicht Auto\_Union\_Rennwagen auf die Sicht Formel1\_Wagen bezieht, und diese Sicht nur Rennwagen mit der Rennserie='Formel 1' enthalten darf und das Tupel, dass eingefügt wird zur Rennserie='Avus' gehört.
+
+\section{Serialisierbarkeit, Anomalien}
+\subsection*{a)}
+S$_{1}$: A=320,B=10;
+S$_{2}$: A=315,B=215;
+S$_{3}$: A=315,B=10;
+S$_{4}$: A=215,B=10;
+S$_{5}$: A=110,B=10;
+S$_{6}$: A=320,B=10;
+
+\subsection*{c)}
+Der Schedule 1 und 2 sind seriell, da sie die Transaktionen dirket hintereinander ausführen. Die anderen Schedules sind nicht seriell. Zudem ist nur der Schedule 6 serialisierbar, da es zu der parallelen Ausführung eine serielle Ausführung gibt, die den selben Datenbankzustand und die selben Ausgabewerte erreicht.
+
 
 \end{document}
