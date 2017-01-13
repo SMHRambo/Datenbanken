@@ -18,6 +18,8 @@ Bei einem bezüglich der referentiellen Aktionen sicheren Schemas ist das Ergebni
 Im vorliegenden Schema gibt es zwei Fälle, in denen keine sichere referentielle Aktion durchgeführt werden kann. 
 \textbf{Fall 1:} Wenn eine Person gelöscht wird, welche einen Film ausgeliehen hat, wird die Operation unterbunden. Wenn aber zuerst die Filme gelöscht werden, von denen die Person Produzent ist und die Person genau die Filme, die er selbst produziert hat, ausgeliehen hat, wird die Operation nicht unterbunden. Je nach Reihenfolge der Löschoperation kommen unterschiedliche Ergebnisse heraus. Wir nehmen an, dass der ausgeliehene Film nicht im Bestand einer Videothek ist, ansonsten muss Fall 2 mitbeachtet werden.\\
 \textbf{Fall 2:} Wenn der Produzent eines Filmes gleichzeitig der Leiter einer Videothek ist und dieser gelöscht wird, muss, damit die Löschoperation erfolgreich ist, zuerst die Videothek mit ihrem Bestand gelöscht werden, damit später der Film, den der Leiter der Videothek produziert hat, gelöscht werden kann. Wenn nachdem der Leiter gelöscht wurde, zuerst der Film gelöscht wird, dann wird die Löschoperation unterbunden, falls der Film im Bestand der Videothek ist.
+
+\newpage
 \section{Änderbarkeit von Sichten}
 \subsection*{a)}
 
@@ -47,8 +49,14 @@ S$_{4}$: A=215,B=10;
 S$_{5}$: A=110,B=10;
 S$_{6}$: A=320,B=10;
 
+\subsection*{b)}
+\includegraphics[page=1,width=\textwidth,height=.9\textheight,keepaspectratio]{Handschriftscan.pdf} 
+
 \subsection*{c)}
 Der Schedule 1 und 2 sind seriell, da sie die Transaktionen dirket hintereinander ausführen. Die anderen Schedules sind nicht seriell. Zudem ist nur der Schedule 6 serialisierbar, da es zu der parallelen Ausführung eine serielle Ausführung gibt, die den selben Datenbankzustand und die selben Ausgabewerte erreicht.
+Datenanomalien und Begründungen sind in der Abbildung von Aufgabenteil b.
 
+\section{Transaktionen}
+\includegraphics[page=2,width=\textwidth,height=.9\textheight,keepaspectratio]{Handschriftscan.pdf} 
 
 \end{document}
